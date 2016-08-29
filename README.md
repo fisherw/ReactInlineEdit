@@ -28,6 +28,8 @@ Watch a [demo](http://htmlpreview.github.io/?https://github.com/kaivi/ReactInlin
 - `editing`:_boolean_ If true, element will be in edit mode
 - `tabIndex`:_number_ tab index used for focusing with TAB key **default** `0`
 - `stopPropagation`:_boolean_ If true, the event onClick will not be further propagated.
+- `onFinish`:`function` function to call when finish editing, it will receive `({paramName: value}, oldValue)`
+
 
 ### Usage example
 ```javascript
