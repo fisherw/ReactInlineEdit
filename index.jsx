@@ -87,6 +87,12 @@ export default class InlineEdit extends React.Component {
         } else if (this.props.text === this.state.text || !this.isInputValid(this.state.text)) {
             this.cancelEditing();
         }
+
+        if (this.onFinish) {
+            let newProp = {};
+            newProp[this.props.paramName] = this.state.text;
+            this.onFinish(newProp, this.props.text);
+        }
     };
 
     cancelEditing = () => {
