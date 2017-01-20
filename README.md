@@ -1,3 +1,7 @@
+# 注：
+
+  修复组件初始状态不能为active的bug.
+  
 # Inline Edit Component for React
 
 Before you continue, check out a successor to this repo: [React Inline Edit Kit](https://github.com/kaivi/riek). It is more functional, and will be maintained in future.
